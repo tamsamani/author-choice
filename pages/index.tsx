@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Index() {
+function Index() {
 	const [name, setName] = useState("MyApp");
 
 	useEffect(() => {
@@ -14,3 +14,5 @@ export default function Index() {
 		</div>
 	);
 }
+
+export default Index;

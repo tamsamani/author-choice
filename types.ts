@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/// <reference types="react" />
+// eslint-disable-next-line @typescript-eslint/triple-slash-reference
+/// <reference path="module-env.d.ts" />
+
 /**
  * Author Choice Web App &copy; 2018-2020
  * Author : TAMSAMANI Mohamed
@@ -35,5 +40,3 @@ interface User {
 	/** User Image Avatar */
 	avatar: string;
 }
-
-export {};
