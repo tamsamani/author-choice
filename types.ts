@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /// <reference types="react" />
-// eslint-disable-next-line @typescript-eslint/triple-slash-reference
 /// <reference path="module-env.d.ts" />
 
 /**
@@ -10,7 +8,8 @@
  * Version : v0.1.0
  */
 
-/** the avauilable Languages for the App */
+
+/** the available Languages for the App */
 type Language = "en" | "ar";
 
 /** The Mode type */

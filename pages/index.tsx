@@ -1,6 +1,6 @@
-import Button from "components/Button";
-import useDex from "hooks/useDex";
 import { useEffect, useState } from "react";
+import useDex from "hooks/useDex";
+import Button from "components/Button";
 
 function Index() {
 	const [name, setName] = useState("MyApp");
@@ -18,15 +18,15 @@ function Index() {
 					<div className="text-primary-500 font-bold">{name}</div>
 					<div></div>
 					<div className="flex gap-2">
-						<Button color="red" light>
+						<Button color="primary" bordered>
 							Log In
 						</Button>
-						<Button light outline>
+						<Button color="success" size="md" outline>
 							Sign In
 						</Button>
 					</div>
 				</div>
-				<div className="flex-grow">Content</div>
+				<div className="grow">Content</div>
 				<div>
 					<div>Footer</div>
 					<div>{dex.language}</div>

@@ -1,14 +1,17 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const appThemeColors = require("./styles/app-theme.json");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
-	purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+	content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
 	// mode: "jit",
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		extend: {
 			colors: {
-				...appThemeColors,
+				primary: colors.violet,
+				success: colors.green,
+				warning: colors.yellow,
+				danger: colors.red,
+				info: colors.cyan,
 			},
 			backgroundImage: () => {
 				return {
@@ -16,9 +19,6 @@ module.exports = {
 				};
 			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 };
